@@ -1,0 +1,37 @@
+ Interface 1
+interface Camera {
+    void takePhoto();
+}
+
+ Interface 2
+interface MusicPlayer {
+    void playMusic();
+}
+
+ Class implementing both interfaces (Multiple Inheritance)
+class SmartPhone implements Camera, MusicPlayer 
+{
+    @Override
+    public void takePhoto() 
+{
+        System.out.println("Result: Photo captured successfully!");
+    }
+
+    @Override
+    public void playMusic() {
+        System.out.println("Result: Playing music now...");
+    }
+}
+
+ Main Class
+public class MultipleInheritanceDemo
+ {
+    public static void main(String[] args)
+ {
+        SmartPhone myPhone = new SmartPhone();
+        
+        System.out.println("--- Running Multiple Inheritance Demo ---");
+        myPhone.takePhoto();
+        myPhone.playMusic();
+    }
+}
