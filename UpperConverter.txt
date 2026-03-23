@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class UpperConverter {
+    public static void main(String[] args) {
+        // 1. Create a Scanner object to read input from the console
+        Scanner sc = new Scanner(System.in);
+
+        // 2. Prompt the user for a string
+        System.out.print("Enter any text: ");
+        
+        // 3. Read the entire line of text entered by the user
+        String input = sc.nextLine();
+
+        // 4. Convert the string to uppercase
+        String result = input.toUpperCase();
+
+        // 5. Display the result
+        System.out.println("Uppercase version: " + result);
+
+        // Close the scanner to free up resources
+        sc.close();
+    }
+}
